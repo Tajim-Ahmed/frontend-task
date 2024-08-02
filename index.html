@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontend task</title>
+    <style>
+        *{
+         /* background: var(--Primary-Color-40-Main,#FFD800); */
+         margin: 0;padding: 0;
+         
+        }
+        .page{
+            width: 428px;
+            height: 1037px;
+            /* background: var(--Primary-Color-40-Main,#FFD800); */
+            margin-left: 30%;
+            margin-top: 10px;
+            border-radius: 5px;
+
+        }
+        .f1{
+            border-radius: 30px 30px 0px 0px;
+            /* margin: 5px; */
+            /* text-align: center;
+            justify-content: center; */
+            height: 44px;
+            flex-shrink:0;
+            background: var(--Primary-Color-40-Main,#FFD800);
+        }
+        .f1 img{
+            margin-top: 15px;
+        }
+        .f1 time{
+            position: relative;
+            left: 24px;
+           
+
+        }
+        .battery{
+            
+            position: relative;
+            right: -344px;
+        }
+        .wifi{
+            position: relative;
+            right: -288px;
+        }
+        .sig{
+            position: relative;
+            right: -237px;
+
+        }
+        .f2{
+            display: flex;
+            padding-top: 21px;
+            /* flex-direction: column; */
+            align-items: center;
+            /* justify-content: center; */
+            gap: 21px;
+            background: var(--Primary-Color-40-Main,#FFD800);
+           
+
+        }
+        #head{
+            background-color: rgba(255, 255, 255, 0.493);
+            border: 1px solid black;
+            height: 32px;
+            /* clip-path: circle(); */
+            border-radius: 50%;
+            justify-content: center;
+            left: 10px;
+            width: 35px;
+            top: -2px;
+            position: relative;
+            align-content: center;
+            display: flex;
+            align-items: center;
+        }
+        #name{
+            align-items: center;
+            position: relative;
+            top: -15px;
+
+        }
+        #name img{
+            rotate: 90deg;
+            position: relative;
+            top: 3px;
+            filter: grayscale(100%);
+        }
+        .loc{
+            position:relative;
+            top: 8px;
+            left: -140px;
+        }
+        #locname{
+            position: relative;
+            left: -160px;
+            top: 8px;
+            font-size: small;
+        }
+        #menu{
+            position: relative;
+            right: -53px;
+        }
+        .f3{
+            background: var(--Primary-Color-40-Main,#FFD800);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 30px;
+        }
+ 
+        .blk{
+            padding:20px ;
+            border-radius: 20px;
+            width: 380px;
+            height: 88px;
+            background:var(--Thunder-40-main,black);
+        }
+        .buy{
+            background-color: rgba(244, 235, 235, 0.34);
+            width: 238px;
+            border-radius: 20px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            color: white;
+            border: 5px solid black;
+
+        }
+        .am{
+            margin: 4px;
+            margin-left: 8px;
+        }
+        .tag{
+            color: white;
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            border-radius: 20px;
+            gap: 5px;
+            padding: 5px;
+            width: 106px;
+        }
+        .amity{
+            background-color: rgba(244, 235, 235, 0.34);
+            border-radius: 20px;
+            padding: 2px;
+            display: flex; 
+             flex-direction: row;
+            color: white;
+            border: 5px solid black;
+            position: relative;
+            top: -24px;
+
+        }
+        .grp{
+            color: white;
+            display: flex;
+            /* flex-direction: row; */
+            background-color: black;
+            border-radius: 20px;
+            gap: 5px;
+            padding: 5px;
+        }
+   .class{
+    margin: 4px;
+    margin-left: 8px;
+   }
+   #pen{
+       background-color: rgba(244, 235, 235, 0.34);
+       width: 30px;
+       position: relative;
+       right: -299px;
+       top: -34px;
+       height: 30px;
+       border-radius: 8px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: white;
+ }
+   .break{
+       display: flex;
+       justify-content: center;
+       position: relative;
+       top: -27px;
+       z-index: 1;
+   }
+   .offer{
+    background: linear-gradient(365deg,white,rgb(240, 196, 203));
+    padding: 10px;
+    position: relative;
+    top: -43px;
+    border-radius: 15px 15px 0px 0px;
+    height: 100px;
+    
+   }
+   .save{
+    font-size: smaller;
+   }
+   .offer img{
+    position: relative;
+    right: -302px;
+    top: -83px;
+   }
+   .on{
+       color: white;
+       position: relative;
+       top: -181px;
+       right: -315px;
+       font-size: small;
+       rotate: -10deg;
+   }
+   .card{
+     /* display: flex; */
+   }
+   .dress img{
+       display: inline;
+       border: 1px solid black;
+       border-radius: 10px;
+   }
+   #title{
+       font-size: larger;
+       font-weight: 600;
+       padding: 5px;
+       display: inline;
+       position: relative;
+       top: -70px;
+       left: 25px;
+   }
+   #title2{
+       font-size: larger;
+       font-weight: 600;
+       padding: 5px;
+       display: inline;
+       position: relative;
+       top: -70px;
+       left:  115px;;
+   }
+   .lig{
+    background-color: rgba(208, 202, 202, 0.637);
+     border-radius: 5px;
+     display: inline-flex;
+     height: fit-content;
+     position: relative;
+     right: -296px;
+     top: -46px;
+     padding: 0px 5px;
+    }
+    .size{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 31px;
+    }
+    .s{
+        top: 0px;
+        display: inline-flex;
+        position: relative;
+        left: -7px;
+        width: 24px;
+        border-radius: 13px;
+        padding: 10px;
+        justify-content: center;
+        margin: auto;
+        border: 1px solid #0000003b;
+        font-weight: bold;
+}
+
+     #s32{
+          background-color: #FFD800;
+     }
+     #card2{
+        position: relative;
+        
+        top: 94px;
+     }
+
+    </style>
+</head>
+<body>
+    <div class="page">
+    <div class="f1">
+        <time datetime="">9:11</time>
+        <img src="./Frontend Task/Battery.svg" alt="" class="battery">
+        <img src="./Frontend Task/Wifi.svg" alt="" class="wifi">
+        <img src="./Frontend Task/Mobile Signal.svg" alt="" class="sig">
+    </div>
+    <div class="f2">
+        <p id="head">👨‍✈️</p>
+        <p id="name">Nikhil Verma  
+            <img src="./Frontend Task/navigate_next_FILL0_wght400_GRAD0_opsz48 1 (1).svg" alt=""></p>
+            <img class="loc" src="./Frontend Task/location_on_24dp_FILL1_wght400_GRAD0_opsz24 1.svg" alt="">
+            <p id="locname">Delhi India</p>
+            <img id="menu" src="./Frontend Task/menu_black_24dp 1.svg" alt="">
+    </div>
+    
+    <div class="f3">
+        <div class="blk">
+            <div class="buy">
+                <div class="tag"><img src="./Frontend Task/local_mall_24dp_FILL1_wght400_GRAD0_opsz24 1.svg" alt="">
+                    <p>Buying for </p>
+                  </div>
+                  <p class="am">Ankur Mittal</p>
+                </div>
+                <p id="pen">🖊</p>
+            
+
+            <div class="amity">
+                <div class="grp">
+                    <img style="width: 25px; color: black;" src="./Frontend Task/Screenshot 2024-08-01 184654.png" alt="">
+                    <p>Amity global school </p>
+                  </div>
+                  <p class="class">V|/Male/UJJAIN</p>
+            </div>
+            </div>
+        </div>
+        <div class="break">
+            <img  src="./Frontend Task/Group 30003.svg" alt="">
+        </div>
+
+        <div class="offer">
+            <p style="padding-top: 15px;">WELCOME SUNNY SUMMER <br>
+            PACKAGE ❗</p><br>
+            <p class="save">Flat 15% OFF | SAVINGS UPTO ₹850</p>
+
+            <img src="./Frontend Task/Group.svg" alt="">
+            <p class="on">SCHOOL <br> APPROVED</p>
+
+        </div><hr style="  color: rgba(5, 5, 5, 0.24); position: relative; top: -43px;">
+
+
+        <div class="card">
+
+           <div class="dress"> <img style="padding: 10px; background-color: rgba(244, 247, 249, 0.715);" src="./Frontend Task/image 15.png" alt="">
+            <p id="title">Half Sleeves Boys shirt Boys <br></p>
+             <p id="title2"> Shirt</p>
+            <div class="lig">
+                <p>₹254 </p>  
+                <p style=" color: #0000007a; padding-left: 5px;"> x1</p>
+            </div>
+        
+            <p style="color: rgba(0, 0, 0, 0.44); display: inline; position: relative; top: -40px;">size:</p>
+            <p style="display: inline; position: relative; top: -40px;">40</p>
+            <p style="display: inline;position: relative;top: -15px;left: -50px; font-size: larger;">₹240</p>
+            <p style="display: inline;position: relative;top: -15px;left: -40px;"> <strike> ₹240</strike></p>
+            <p style="color: rgb(10, 144, 10);font-weight: bold;display: inline; position: relative;top: -15px; left: -35px;" >12% OFF</p>
+            <img
+         style="
+         display: inline;
+         position: relative;
+         top: -7px;
+         left: -10px;
+         background-color: #55cd1259;
+         width: 20px;
+         border-radius: 5px;
+         padding: 4px;" 
+            src="./Frontend Task/remove_FILL0_wght400_GRAD0_opsz24 1.svg" alt="">
+            <p style="
+            top: -15px;
+            
+            display: inline-flex;
+            position: relative;
+            
+            left: -5px;
+            background-color: #0000001f;
+            width: 20px;
+            border-radius: 5px;
+            padding: 4px;
+            
+            justify-content: center;
+          
+            ">1</p>
+            <img style="
+            display: inline;
+            position: relative;
+            top: -7px;
+            /* left: 17px; */
+            background-color: #55cd1259;
+            width: 20px;
+            border-radius: 5px;
+            padding: 4px;
+            " src="./Frontend Task/Vector (1).svg" alt="">
+           
+        </div>
+           <hr style=" border-top: 1px dashed #0000002b;">
+            <p
+            style="
+             color: rgba(0, 0, 0, 0.44);
+             position: relative;
+             display: inline;
+             top: 20px;
+            ">size</p>
+            <p
+            style="
+            color: rgb(251, 10, 10);
+            display: inline;
+            position: relative;
+            top: 20px;
+            left: 280px;
+            ">size chart</p>
+            <p
+            style="
+            color: rgb(251, 10, 10);
+            display: inline;
+            position: relative;
+            top: 20px;
+            left: 295px;
+            font-weight: bolder;
+            ">></p>
+            <div class="size">
+                <p class="s">24</p>
+                <p  class="s">26</p>
+                <p class="s">28</p>
+                <p class="s" >30</p>
+                <p class="s" id="s32">32</p>
+                <p class="s">38</p>
+            </div>
+
+
+
+       <hr style="
+        color: #0000004f;
+        position: relative;
+        top: 60px;
+        width: 90%;
+        left: 20px;
+        "> </div>
+
+        
+
+
+        <div class="card" id="card2">
+
+           <div class="dress"> <img style="padding: 10px; background-color: rgba(244, 247, 249, 0.715);" src="./Frontend Task/image 15.png" alt="">
+            <p id="title">Half Sleeves Boys shirt Boys <br></p>
+             <p id="title2"> Shirt</p>
+            <div class="lig">
+                <p>₹254</p>
+                <p style="color: #0000007a; padding-left: 5px;">x1</p>
+            </div>
+        
+            <p style="color: rgba(0, 0, 0, 0.44); display: inline; position: relative; top: -40px;">size:</p>
+            <p style="display: inline; position: relative; top: -40px;">40</p>
+            <p style="display: inline;position: relative;top: -15px;left: -50px; font-size: larger;">₹240</p>
+            <p style="display: inline;position: relative;top: -15px;left: -40px;"> <strike> ₹240</strike></p>
+            <p style="color: rgb(10, 144, 10);font-weight: bold;display: inline; position: relative;top: -15px; left: -35px;" >12% OFF</p>
+            <img
+         style="
+         display: inline;
+         position: relative;
+         top: -7px;
+         left: -10px;
+         background-color: #55cd1259;
+         width: 20px;
+         border-radius: 5px;
+         padding: 4px;" 
+            src="./Frontend Task/remove_FILL0_wght400_GRAD0_opsz24 1.svg" alt="">
+            <p style="
+            top: -15px;
+            
+            display: inline-flex;
+            position: relative;
+            
+            left: -5px;
+            background-color: #0000001f;
+            width: 20px;
+            border-radius: 5px;
+            padding: 4px;
+            
+            justify-content: center;
+          
+            ">1</p>
+            <img style="
+            display: inline;
+            position: relative;
+            top: -7px;
+            /* left: 17px; */
+            background-color: #55cd1259;
+            width: 20px;
+            border-radius: 5px;
+            padding: 4px;
+            " src="./Frontend Task/Vector (1).svg" alt="">
+           
+        </div>
+        <hr style=" border-top: 1px dashed #0000002b;">
+
+            <p
+            style="
+             color: rgba(0, 0, 0, 0.44);
+             position: relative;
+             display: inline;
+             top: 20px;
+            ">size</p>
+            <p
+            style="
+            color: rgb(251, 10, 10);
+            display: inline;
+            position: relative;
+            top: 20px;
+            left: 280px;
+            ">size chart</p>
+            <p
+            style="
+            color: rgb(251, 10, 10);
+            display: inline;
+            position: relative;
+            top: 20px;
+            left: 295px;
+            font-weight: bolder;
+            ">></p>
+            <div class="size">
+                <p class="s">24</p>
+                <p  class="s">26</p>
+                <p class="s">28</p>
+                <p class="s" >30</p>
+                <p class="s" id="s32">32</p>
+                <p class="s">38</p>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
